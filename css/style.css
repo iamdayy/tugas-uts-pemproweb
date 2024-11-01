@@ -63,9 +63,8 @@ body {
   overflow: hidden;
   background: url(../img/totop.png) 0 top no-repeat;
   position: fixed;
-  margin-right: -690px !important;
-  right: 50%;
-  bottom: 60px;
+  right: 40px;
+  bottom: 20px;
   z-index: 999;
 }
 #toTop:hover {
@@ -557,6 +556,9 @@ header h1 {
   position: relative;
   list-style: none;
   overflow: hidden;
+  display: flex;
+  gap: 8px;
+  justify-content: end;
 }
 .list2 li {
   position: relative;
@@ -565,7 +567,7 @@ header h1 {
 }
 .list2 li a {
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 26px;
   color: #404040;
   -webkit-transition: all 0.2s ease;
@@ -574,7 +576,7 @@ header h1 {
 .list2 li a:hover {
   text-decoration: none;
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 26px;
   color: #fa6569;
   -webkit-transition: all 0.2s ease;
@@ -1442,4 +1444,32 @@ footer {
 /*Core variables and mixins*/
 img {
   max-width: 100%;
+}
+#chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
 }
