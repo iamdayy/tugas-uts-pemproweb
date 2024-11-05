@@ -15,6 +15,7 @@ a[href^="tel:"] {
 /*------ template stylization ------*/
 body {
   background: #fff;
+  overflow-x: hidden;
 }
 .pink {
   color: #fa6569;
@@ -1208,9 +1209,6 @@ footer {
   .blogcont {
     overflow: visible;
   }
-  .navbar-brand_ {
-    margin: 110px 0;
-  }
   .row_1 figure {
     width: 300px;
     padding: 0;
@@ -1236,6 +1234,20 @@ footer {
 }
 /**********************************************************/
 @media (max-width: 767px) {
+  .navbar-brand_ {
+    float: right;
+    display: block;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    margin: 80% auto;
+    right: 0px;
+  }
+  .navbar-brand_ h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
   .block-404 figure {
     margin-bottom: 40px;
   }
@@ -1303,9 +1315,6 @@ footer {
     overflow: hidden;
     margin-bottom: 40px;
   }
-  .navbar-brand_ {
-    margin: 70px 0;
-  }
   .row_1 figure {
     width: 200px;
     padding: 0;
@@ -1324,13 +1333,6 @@ footer {
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 20px;
-  }
-  .navbar-brand_ {
-    width: 100%;
-    margin: 153px 0 179px;
-  }
-  .navbar-brand_ img {
-    max-width: 100%;
   }
   .sf-menu {
     display: none !important;
